@@ -1,0 +1,95 @@
+html,body{
+    height: auto;
+    width: auto;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    background-color: #2f2f31;
+}
+
+button{
+    font-weight: bold;
+    color:white;
+    border-radius: 15px;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 30px;
+    border-width: 0px;
+    
+}
+.op_gg{
+    background-color: #5383e8;
+}
+
+.u_gg{
+    background-color: #191937;
+}
+
+button:hover{
+    cursor: pointer;
+}
+.headline{
+    display:grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    background-color: black;
+    margin-bottom: 10px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.title{
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    color:white;
+    font-family: Arial,sans-serif;
+}
+.account_list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.accounts{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    flex: 1;
+    border-radius: 16px;
+    margin-bottom: 15px;
+    background-color: #515157;
+}
+.summoner_name{
+    color: rgb(135, 134, 123);
+    font-size: 22px;
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 3px;
+    padding-right: 3px;
+    flex: 1;
+}
+.links{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 3px;
+}
+.bottom{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.hecarim{
+    background-color: red;
+    font-size: 50px;
+}

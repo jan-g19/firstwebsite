@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HORSEY</title>
+
+  <style>
+    html,body{
+      height: auto;
+      width: auto;
+      border: 0px;
+      margin: 0px;
+      padding: 0px;
+      background-color: #1C1C1F;
+    }
+    button{
+      width: fit-content;
+      font-size: 30px;
+      font-weight: 600;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    button:hover{
+      cursor: pointer;
+    }
+
+    .bigbutton{
+      padding: 0px;
+      border: 0px;
+    }
+
+    .homepage{
+      background-color: black;
+      color: white;
+      border-radius: 10px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    .stop_button{
+      background-color: red;
+      color: white;
+      border-radius: 10px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    .heca_img{
+      display: block;
+    }
+
+    .buttons{
+      margin-top: 15px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+  </style>
+</head>
+
+<body>
+  
+  <audio id="Horse">
+      <source src="sounds/horse.mp3"
+      type="audio/mp3">
+  </audio>
+
+  <div style="margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  ">
+    <button class="bigbutton" onclick="playAudio(x)" type="button">
+       <img class="heca_img" src="VSCBilder/Hecarim_0.jpg" alt="Hecarim">
+    </button>
+  </div>
+
+  <div class="buttons">
+
+    <button class="stop_button" onclick="pauseAudio()" type="button">
+      STOP
+    </button>
+
+    <a href="index.html">
+      <button class="homepage">
+        LOL-Profiles
+      </button>
+    </a>
+
+  </div>
+
+  <div style="margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  ">
+    <iframe width="800" height="450" src="https://www.youtube.com/embed/MArJp3Lxgxk" frameborder="0" allowfullscreen></iframe>
+      </iframe>
+  </div>
+
+  <script>
+    var x = document.getElementById("Horse"); 
+    x.volume = 0.2; 
+
+    function playAudio() { 
+      x.play(); 
+    } 
+    
+    function pauseAudio() { 
+      x.pause(); 
+    } 
+  </script>
+    
+</body>
+</html>
